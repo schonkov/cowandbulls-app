@@ -9,39 +9,39 @@ Structure of the app: cowsandbulls-app/
 
 Model folder: 
 
-\app\Models\Game.php
-\app\Models\Guess.php
-\app\Models\User.php
+- \app\Models\Game.php
+- \app\Models\Guess.php
+- \app\Models\User.php
 
 View folder: /resources/views/
 
-auth/ - Authentication pages;
-game/ - index/show/topplayers/ - pages of the Game;
-layouts/app.blade.php - default layout of the app;
-layouts/navigation.blade.php - navigation bar;
-dashboard.blade.php - /dashboard; 
-welcome.blade.php - /;
+- auth/ - Authentication pages;
+- game/ - index/show/topplayers/ - pages of the Game;
+- layouts/app.blade.php - default layout of the app;
+- layouts/navigation.blade.php - navigation bar;
+- dashboard.blade.php - /dashboard; 
+- welcome.blade.php - /;
 
 Controller folder: (back-end)
-\app\Http\Controllers\GameController.php - the functionality for the game.
+- \app\Http\Controllers\GameController.php - the functionality for the game.
 
 Migration folder:
-\database\migrations\
+- \database\migrations\
 
 Public folder (CSS/JavaScript scripts/fonts):
-\public\css 
-index.php - main;
-css\ - (compiled css from resources/css/app.css) (bootstrap 4.1 / tailwindcss)
-js\ - (compiled css from resources/js/app.js) (jquery + bootstrap 4.1 js + related js)
-images\ - images;
+- \public\css 
+- index.php - main;
+- css\ - (compiled css from resources/css/app.css) (bootstrap 4.1 / tailwindcss)
+- js\ - (compiled css from resources/js/app.js) (jquery + bootstrap 4.1 js + related js)
+- images\ - images;
 
 Routes: 
-\routes\web.php
+- \routes\web.php
 
 ## 1. Create a Virtual Host (xammp and hosts)
 
-C:\xamp\apache\conf\extra\httpd-vhosts.conf 
-add lines for vhost (you can setup correctly the folder path D:\cowsandbulls-app) ->
+- C:\xamp\apache\conf\extra\httpd-vhosts.conf 
+- add lines for vhost (you can setup correctly the folder path D:\cowsandbulls-app) ->
 
 <VirtualHost *:80>
     DocumentRoot "D:\cowsandbulls-app\public"
@@ -63,25 +63,25 @@ add lines for vhost (you can setup correctly the folder path D:\cowsandbulls-app
     </Directory>
 </VirtualHost>
 
-C:\Windows\System32\drivers\etc\hosts
-add line for vhost->
+- C:\Windows\System32\drivers\etc\hosts 
+- add line for vhost->
  
-127.0.0.1       cowsandbulls.local
+- 127.0.0.1       cowsandbulls.local
 
 ## 1.1 OR Just start laravel server 
-run commands: php artisan serve
+-run commands: php artisan serve
 
 ## 2. Go to Project directory (D:\cowsandbulls-app) 
 
 ## 2.1 Run the command line (bash)
 
-run commands:
+- run commands:
 
-composer install - to install the packages from composer.json
-composer update - to update them
-npm install - to install npm packages
-npm run dev - to re-compile the js/css files
-php artisan migrate - to run the migrations to create the new tables in MySql database
+- composer install - to install the packages from composer.json
+- composer update - to update them
+- npm install - to install npm packages
+- npm run dev - to re-compile the js/css files
+- php artisan migrate - to run the migrations to create the new tables in MySql database
 
 ## 3. Open the web app and test pages/functionality
 
@@ -98,11 +98,12 @@ After Login in:
 - http://cowsandbulls.local/game/topplayers - Top Players 
 - post http://cowsandbulls.local/game/end - End current game  
 
-do
-## 3.1 Register -> Login -> New Game -> Try to Guess the answer (Play the game) (or End the game)
-for some users (eg. 5-10) and for some games(eg. 5-10)
 
-and see 
+## 3.1 Register -> Login -> New Game -> Try to Guess the answer (Play the game) (or End the game)
+
+- do 3.1 and repeat for some users (eg. 5-10) and for some games(eg. 5-10)
+
+- and see 
 - http://cowsandbulls.local/game/topplayers - Top Players 
 
 # cowandbulls-app
