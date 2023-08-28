@@ -79,6 +79,11 @@ Routes:
 
 - composer install - to install the packages from composer.json
 - composer update - to update them
+
+## 2.2 Start the Mysql server and edit .env file (db credentials);
+
+- run next commands:
+
 - npm install - to install npm packages
 - npm run dev - to re-compile the js/css files
 - php artisan migrate - to run the migrations to create the new tables in MySql database
